@@ -1,0 +1,39 @@
+#faq-container {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* スタイリングを追加する */
+/* ...既存のスタイル... */
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding-top: 0;
+}
+
+.faq-item {
+    /* ...他のスタイル... */
+    overflow: hidden; /* アニメーションのために必要 */
+}
+
+.faq-answer {
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out; /* スムーズなトランジションを追加 */
+    /* ...他のスタイル... */
+}
+

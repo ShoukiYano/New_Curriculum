@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    margin-left: 20px;
+}
+
+#faq-container {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* スタイリングを追加する */
+/* ...既存のスタイル... */
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding-top: 0;
+}
+
+.faq-item {
+    /* ...他のスタイル... */
+    overflow: hidden; /* アニメーションのために必要 */
+}
+
+.faq-answer {
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out; /* スムーズなトランジションを追加 */
+    /* ...他のスタイル... */
+}
+
+
+#hero {
+    color: #000;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.feature-item {
+    border: solid 1px #000;
+    max-width: 300px;
+    margin: 0 15px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-item {
+        max-width: 80%;
+        margin: 20px 0;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
